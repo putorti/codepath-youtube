@@ -14,6 +14,9 @@
 		9630B3721C80CADC0057DEC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9630B3701C80CADC0057DEC5 /* LaunchScreen.storyboard */; };
 		9630B37D1C80CADC0057DEC5 /* youtubeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9630B37C1C80CADC0057DEC5 /* youtubeTests.swift */; };
 		9630B3881C80CADC0057DEC5 /* youtubeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9630B3871C80CADC0057DEC5 /* youtubeUITests.swift */; };
+		9630B3961C80CB680057DEC5 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9630B3951C80CB680057DEC5 /* MenuViewController.swift */; };
+		9630B3981C80CB6D0057DEC5 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9630B3971C80CB6D0057DEC5 /* FeedViewController.swift */; };
+		9630B39B1C80CB820057DEC5 /* HamburgerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9630B39A1C80CB820057DEC5 /* HamburgerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		9630B3831C80CADC0057DEC5 /* youtubeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = youtubeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9630B3871C80CADC0057DEC5 /* youtubeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = youtubeUITests.swift; sourceTree = "<group>"; };
 		9630B3891C80CADC0057DEC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9630B3951C80CB680057DEC5 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		9630B3971C80CB6D0057DEC5 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		9630B39A1C80CB820057DEC5 /* HamburgerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HamburgerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,7 @@
 				9630B36E1C80CADC0057DEC5 /* Assets.xcassets */,
 				9630B3701C80CADC0057DEC5 /* LaunchScreen.storyboard */,
 				9630B3731C80CADC0057DEC5 /* Info.plist */,
+				9630B3991C80CB700057DEC5 /* View Controllers */,
 			);
 			path = youtube;
 			sourceTree = "<group>";
@@ -123,6 +130,16 @@
 				9630B3891C80CADC0057DEC5 /* Info.plist */,
 			);
 			path = youtubeUITests;
+			sourceTree = "<group>";
+		};
+		9630B3991C80CB700057DEC5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9630B3951C80CB680057DEC5 /* MenuViewController.swift */,
+				9630B3971C80CB6D0057DEC5 /* FeedViewController.swift */,
+				9630B39A1C80CB820057DEC5 /* HamburgerViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +274,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9630B36A1C80CADC0057DEC5 /* ViewController.swift in Sources */,
+				9630B3961C80CB680057DEC5 /* MenuViewController.swift in Sources */,
+				9630B3981C80CB6D0057DEC5 /* FeedViewController.swift in Sources */,
+				9630B39B1C80CB820057DEC5 /* HamburgerViewController.swift in Sources */,
 				9630B3681C80CADC0057DEC5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
