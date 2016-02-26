@@ -10,15 +10,38 @@ import UIKit
 
 class FeedViewController: UIViewController {
 
+    @IBOutlet var feedPan: UIPanGestureRecognizer!
+    @IBOutlet var feedView: UIImageView!
+    var feedViewCenter: CGPoint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        feedViewCenter = feedView.center
+        feedView.userInteractionEnabled = true
+        feedPan = UIPanGestureRecognizer(target: self, action: "revealMenu:")
+        feedView.addGestureRecognizer(feedPan)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func revealMenu(panGestureRecognizer: UIPanGestureRecognizer) {
+        var point = panGestureRecognizer.locationInView(view)
+        var translation = panGestureRecognizer.translationInView(view)
+        var velocity = panGestureRecognizer.velocityInView(view)
+        
+        if panGestureRecognizer.state == UIGestureRecognizerState.Began {
+            print("Gesture happening")
+        } else if panGestureRecognizer.state == UIGestureRecognizerState.Changed {
+            
+            feedView.center = CGPoint(x: feedViewCenter.x + translation.x, y: feedViewCenter.y) // allow drag on x-axis only
+            print("Gesture happening")
+            
+        } else if panGestureRecognizer.state == UIGestureRecognizerState.Ended {
+            
+        }
     }
     
 
