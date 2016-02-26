@@ -18,11 +18,11 @@ class HamburgerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         var storyboard = UIStoryboard(name: "Main", bundle: nil)
-        var ms = storyboard.instantiateViewControllerWithIdentifier("MenuViewController") as! MenuViewController
-        var fs = storyboard.instantiateViewControllerWithIdentifier("FeedViewController") as! FeedViewController
+        var menuViewController = storyboard.instantiateViewControllerWithIdentifier("MenuViewController") as! MenuViewController
+        var feedViewController = storyboard.instantiateViewControllerWithIdentifier("FeedViewController") as! FeedViewController
         
         //menuView.addSubview(ms.view)
-        feedView.addSubview(fs.view)
+        feedView.addSubview(feedViewController.view)
     }
 
     override func didReceiveMemoryWarning() {
